@@ -1,1 +1,1 @@
-# Projeto-PW-ANGULAR
+🏁 Projeto Programação Web - 2 Este projeto tem como objetivo clonar a interface do Spotify, utilizando tecnologias modernas de front-end como HTML, CSS e JavaScript. A ideia é recriar a experiência visual e interativa de uma das plataformas de streaming mais populares, sem a funcionalidade real de streaming de música.
