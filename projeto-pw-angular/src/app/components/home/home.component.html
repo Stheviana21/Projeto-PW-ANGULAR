@@ -1,1 +1,105 @@
-<p>home works!</p>
+<!-- Novo Header do Spotify -->
+<header class="spotify-header">
+  <div class="header-left">
+    <div class="spotify-logo">
+      <img class="spotify-logo-img" src="assets/spotify-icon.jpg" alt="">
+      <i class="fa-brands fa-spotify"></i>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você quer ouvir?" />
+    </div>
+  </div>
+  <nav class="spotify-nav">
+    <a href="#" class="nav-item premium">Premium</a>
+    <a href="#" class="nav-item">Suporte</a>
+    <a href="#" class="nav-item">Baixar</a>
+    <span class="nav-divider">|</span>
+    <a href="#" class="nav-item install-app">
+      <i class="fa-solid fa-arrow-down-to-bracket"></i>
+      Instalar aplicativo
+    </a>
+    <a href="#" class="nav-item">Inscrever-se</a>
+    <a routerLinkActive="router-link-active" [routerLink]="['/login']" class="nav-item login-btn">Entrar</a>
+  </nav>
+</header>
+
+<div class="container">
+  <nav class="sidebar">
+    <div class="nav-library">
+      <i class="fa-solid fa-book"></i>
+      <p>Sua Biblioteca +</p>
+    </div>
+    <div class="scroll-lateral">
+      <div class="nav-playlist">
+        <h5>Crie sua Primeira Playlist</h5>
+        <p>É fácil, vamos te ajudar</p>
+        <button>Criar Playlist</button>
+      </div>
+      <div class="nav-podcast">
+        <h5>Que tal Seguir um Podcast?</h5>
+        <p>Avisaremos Você sobre nossos episódios</p>
+        <button>Explore Podcast</button>
+      </div>
+    </div>
+    <div class="nav-footer">
+      <a href="#">Legal</a>
+      <a href="#">Centro de Privacidade</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Cookies</a>
+      <a href="#">Sobre Anúncios</a>
+      <a href="#">Acessibilidade</a>
+    </div>
+    <button class="nav-lang-button">
+      <i class="fa-solid fa-globe"></i>
+      Português do Brasil
+    </button>
+  </nav>
+
+  <main>
+    <section class="content">
+      <h2>Músicas em Alta</h2>
+      <div class="musicas-grid">
+        @for (item of musicasData; track item.name) {
+        <div class="musicas-card">
+          <img [src]="item.image" [alt]="'imagem do' + item.image">
+          <div>
+            <h3 class="musicas-nome">{{item.name}}</h3>
+            <p>Música</p>
+          </div>
+        </div>
+        }
+      </div>
+
+      <h2>Artistas Populares</h2>
+      <div class="artists-grid">
+        @for(item of artistData; track item.name) {
+        <div class="artist-card">
+          <img [src]="item.image" [alt]="'imagem do' + item.image">
+          <h3>{{item.name}}</h3>
+          <p>Artista</p>
+        </div>
+        }
+      </div>
+
+      <h2>Álbuns Populares</h2>
+      <div class="albums-grid">
+        @for(item of albumsData; track item.name) {
+        <div class="album-card">
+          <img [src]="item.image" [alt]="'imagem do' + item.image">
+          <h3>{{item.name}}</h3>
+          <p>{{item.artist}}</p>
+        </div>
+        }
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="banner">
+  <div>
+    <h2>Testar o Premium de graça</h2>
+    <p>Inscreva-se para curtir músicas ilimitadas só com alguns anúncios. Não precisa de um cartão de crédito.
+    </p>
+  </div>
+  <button>Inscreva-se Grátis</button>
+</div>

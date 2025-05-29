@@ -1,0 +1,354 @@
+/* Novo Header do Spotify */
+.spotify-header {
+  background-color: #000000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #282828;
+}
+
+.spotify-logo i {
+  font-size: 28px;
+  color: #1DB954;
+}
+
+.spotify-logo-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.spotify-nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #1DB954;
+  transform: scale(1.05);
+}
+
+.premium {
+  color: #1DB954 !important;
+}
+
+.nav-divider {
+  color: #fff;
+  opacity: 0.3;
+  font-size: 18px;
+}
+
+.install-app {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #727272;
+  padding: 8px 32px;
+  border-radius: 500px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  border-color: #fff;
+  transform: scale(1.05);
+}
+
+/* Restante do seu CSS original */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #121212;
+  padding: 10px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-logo i {
+  font-size: 24px;
+}
+
+.scroll-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  flex-grow: 1;
+  margin-top: 0;
+  overflow-y: auto;
+}
+
+
+.nav-library {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-library i,
+.nav-library p {
+  font-size: 14px;
+  color: #B7B3B6;
+  cursor: pointer;
+}
+
+.nav-logo i,
+.nav-library {
+  font-size: 24px;
+  color: #B7B3B6;
+  font-size: 14px;
+}
+
+.nav-playlist,
+.nav-podcast {
+  background-color: #242424;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.nav-playlist button,
+.nav-podcast button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.nav-playlist p,
+.nav-podcast p {
+  font-size: 12px;
+}
+
+.nav-footer {
+  margin-top: auto;
+}
+
+.nav-footer a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+.nav-lang-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 12px;
+  margin-top: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.spotify-header {
+  background-color: #000000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #282828;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 0;
+  /* Remove margens anteriores */
+}
+
+.search-bar i {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-left: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Remova o search-bar do main */
+main {
+  padding: 24px;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 0;
+  /* Remove margem superior */
+}
+
+
+main {
+  padding: 24px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-left: 10px;
+  outline: none;
+}
+
+.artists-grid,
+.albums-grid,
+.musicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.artist-card,
+.album-card,
+.musicas-card {
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.artist-card:hover,
+.album-card:hover,
+.musicas-card:hover {
+  background-color: #282828;
+}
+
+.artist-card img {
+  width: 100%;
+  max-width: 70%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.musicas-card img {
+  width: 100%;
+  max-width: 70%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.album-card img {
+  width: 100%;
+  max-width: 70%;
+  margin-bottom: 16px;
+}
+
+.artist-card h3,
+.album-card h3,
+.musicas-card h3 {
+  font-size: 12px;
+}
+
+.artist-card p,
+.album-card p,
+.musicas-card p {
+  font-size: 10px;
+  color: #878386;
+}
+
+.musicas-nome {
+  color: white;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #AF2896, #509bf5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+}
+
+.banner h2 {
+  font-size: 14px;
+}
+
+.banner p {
+  font-size: 10px;
+}
+
+.banner button {
+  border-radius: 20px;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
