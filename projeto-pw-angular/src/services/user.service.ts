@@ -17,6 +17,12 @@ export class UserService implements OnInit {
   ngOnInit(): void {
 
   }
+  currentUser: Omit<User, 'id'> = {
+    name: '',
+    email: '',
+    password: '',
+    phone: ''
+  };
 
   postUser(user: Omit<User, 'id'>) {
     return this.http.post<User>(this.userUrl, user);
@@ -27,6 +33,7 @@ export class UserService implements OnInit {
       tap(users => {
         if (users && users.length > 0) {
           this.isAuthenticated = true;
+          this.currentUser = users[0];
         };
       }),
       catchError(error => {

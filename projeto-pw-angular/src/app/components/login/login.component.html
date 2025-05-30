@@ -11,16 +11,16 @@
 
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label for="username">E-mail ou nome de usuário</label>
-      <input type="text" id="username" formControlName="username" placeholder="E-mail ou nome de usuário">
-      @if (loginForm.get('username')?.invalid && loginForm.get('username')?.touched) {
+      <label for="email">E-mail ou nome de usuário</label>
+      <input type="text" id="email" formControlName="email" name="email" placeholder="E-mail ou nome de usuário">
+      @if (loginForm.get('email')?.invalid && loginForm.get('email')?.touched) {
       <div class="error-message">Por favor, insira um e-mail válido</div>
       }
     </div>
 
     <div class="form-group">
       <label for="password">Senha</label>
-      <input type="password" id="password" formControlName="password" placeholder="Senha">
+      <input type="password" id="password" formControlName="password" name="password" placeholder="Senha">
       @if (loginForm.get('password')?.invalid && loginForm.get('password')?.touched) {
       <div class="error-message">A senha deve ter pelo menos 6 caracteres</div>
       }
@@ -29,7 +29,7 @@
     <button type="submit" class="login-button" [disabled]="!loginForm.valid">Continuar</button>
   </form>
 
-    <div class="signup-link">
-        Não tem uma conta? <a routerLink="/signup">Inscreva-se no Spotify</a>
-    </div>
-    </div>
+  <div class="signup-link">
+    Não tem uma conta? <a routerLink="/register">Inscreva-se no Spotify</a>
+  </div>
+</div>

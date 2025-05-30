@@ -1,7 +1,18 @@
 {
   "user": [
     {
-      
+      "id": 1,
+      "name": "Alek",
+      "email": "alexsandersampaiolima12@gmail.com",
+      "password": "@leX10163842",
+      "phone": "11940264105"
+    },
+    {
+      "name": "Xefani",
+      "email": "xefani@gmail.com",
+      "password": "@leX10163842",
+      "phone": "11940264105",
+      "id": 2
     }
   ]
 }
