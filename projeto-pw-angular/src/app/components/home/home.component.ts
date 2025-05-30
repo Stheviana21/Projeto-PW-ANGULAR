@@ -11,6 +11,22 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeComponent {
 
+  constructor() {
+    this.audio.src = '';
+    this.audio.load();
+    this.audio.loop = true
+  }
+
+  audio = new Audio;
+
+  tocarMusica() {
+    this.audio.play();
+  }
+
+  pausarMusica() {
+    this.audio.pause();
+  }
+
   musicasData = [
     { name: 'ClickBait', image: 'assets/musicas-dosPredios.jpg' },
     { name: 'Não temos Medo', image: 'assets/musicas-naoTemosMedo.jpeg' },
@@ -37,8 +53,4 @@ export class HomeComponent {
     { name: 'CAJU', artist: 'Liniker', image: 'assets/album-caju.jpg' },
     { name: 'Escândalo Íntimo', artist: 'Luisa Sonza', image: 'assets/album-escandalo.jpg' }
   ];
-
-
-
-
 };

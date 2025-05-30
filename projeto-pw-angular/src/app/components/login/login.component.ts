@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -8,7 +8,14 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
+  styles: [`
+    :host {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    }`]
 })
 export class LoginComponent {
   loginForm: FormGroup;

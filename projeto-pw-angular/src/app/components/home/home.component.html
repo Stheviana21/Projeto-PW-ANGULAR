@@ -62,9 +62,10 @@
         @for (item of musicasData; track item.name) {
         <div class="musicas-card">
           <img [src]="item.image" [alt]="'imagem do' + item.image">
-          <div>
+          <div class="container-nome-button">
             <h3 class="musicas-nome">{{item.name}}</h3>
             <p>Música</p>
+            <button class="play-button"></button>
           </div>
         </div>
         }
@@ -75,8 +76,11 @@
         @for(item of artistData; track item.name) {
         <div class="artist-card">
           <img [src]="item.image" [alt]="'imagem do' + item.image">
-          <h3>{{item.name}}</h3>
-          <p>Artista</p>
+          <div class="container-nome-button">
+            <h3>{{item.name}}</h3>
+            <p>Artista</p>
+            <button class="play-button"></button>
+          </div>
         </div>
         }
       </div>
@@ -86,8 +90,11 @@
         @for(item of albumsData; track item.name) {
         <div class="album-card">
           <img [src]="item.image" [alt]="'imagem do' + item.image">
-          <h3>{{item.name}}</h3>
-          <p>{{item.artist}}</p>
+          <div class="container-nome-button">
+            <h3>{{item.name}}</h3>
+            <p>{{item.artist}}</p>
+            <button class="play-button"></button>
+          </div>
         </div>
         }
       </div>
