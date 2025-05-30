@@ -39,10 +39,10 @@ export class HomeComponent {
 
   musicasData = [
     { name: 'ClickBait', image: 'assets/musicas-dosPredios.jpg', musica: 'assets/audio/VEIGH - Clickbait ft. Niink (Clipe Oficial).mp3' },
-    { name: 'Não temos Medo', image: 'assets/musicas-naoTemosMedo.jpeg', musica: '' },
+    { name: 'Não temos Medo', image: 'assets/musicas-naoTemosMedo.jpeg', musica: 'assets/audio/Tz da Coronel - Não Temos Medo ft. Filipe Ret e Orochi  (Clipe Oficial).mp3' },
     { name: 'Mãe Solteira', image: 'assets/musicas-maeSolteira.jpg', musica: 'assets/audio/MÃE SOLTEIRA - J.Eskine, MC Davi, MC G15, DG e Batidão Stronda (GR6 Explode).mp3' },
-    { name: 'Deixa eu ver se ta Lisinha', image: 'assets/musicas-deixaEuVer.jpeg', musica: '' },
-    { name: 'Taylor', image: 'assets/musicas-taylor.jpg', musica: '' },
+    { name: 'Deixa eu ver se ta Lisinha', image: 'assets/musicas-deixaEuVer.jpeg', musica: 'assets/audio/DEIXA EU VER SE TÁ LISINHA - J.Eskine.mp3' },
+    { name: 'Taylor', image: 'assets/musicas-taylor.jpg', musica: 'assets/audio/VEIGH - Taylor (Clipe Oficial) [Eu Venci o Mundo].mp3' },
     { name: 'Three Little Birds', image: 'assets/musicas-bobMarley.jpg', musica: 'assets/audio/Bob Marley & The Wailers - Three Little Birds (Official Music Video).mp3' }
   ];
 
@@ -57,7 +57,7 @@ export class HomeComponent {
 
   albumsData = [
     { name: 'White Noise (sleep & Relaxation Sounds)', artist: 'Sleepy John', image: 'assets/album-white-noise.jpg', musica: '' },
-    { name: 'O Céu Explica Tudo(Ao Vivo)', artist: 'Henrique & juliano', image: 'assets/audio/Henrique e Juliano - O CÉU EXPLICA TUDO - DVD O Céu Explica Tudo.mp3', musica: '' },
+    { name: 'O Céu Explica Tudo(Ao Vivo)', artist: 'Henrique & juliano', image: 'assets/album-ceu-explica.jpg', musica: 'assets/audio/Henrique e Juliano - O CÉU EXPLICA TUDO - DVD O Céu Explica Tudo.mp3' },
     { name: 'Nada como um dia após o outro', artist: 'Racionais', image: 'assets/album-vida-loka.jpg', musica: 'assets/audio/Eu sou 157 - Nada Como Um Dia Após O Outro Dia (Chora Agora).mp3' },
     { name: 'HIT ME HARD AND SOFT', artist: 'Billie Eilish', image: 'assets/album-hit-me.jpg', musica: 'assets/audio/Billie Eilish - SKINNY (Live Performance from Amazon Music Songline).mp3' },
     { name: 'CAJU', artist: 'Liniker', image: 'assets/album-caju.jpg', musica: 'assets/audio/Liniker - Caju (Letra).mp3' },

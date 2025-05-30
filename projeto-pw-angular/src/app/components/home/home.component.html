@@ -1,9 +1,8 @@
-<!-- Novo Header do Spotify -->
+<!-- Header do Spotify -->
 <header class="spotify-header">
   <div class="header-left">
     <div class="spotify-logo">
       <img class="spotify-logo-img" src="assets/spotify-icon.jpg" alt="">
-      <!-- <i class="fa-brands fa-spotify"></i> -->
     </div>
     <div class="search-bar">
       <input type="text" placeholder="O que você quer ouvir?" />
@@ -92,6 +91,7 @@
         }
       </div>
 
+      <!-- Sessão feito com um for criando cada algum  -->
       <h2>Álbuns Populares</h2>
       <div class="albums-grid">
         @for(item of albumsData; track item.name) {
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <!-- rodape -->
+    <!-- Footer -->
 
     <div class="divider"></div>
 
@@ -147,10 +147,20 @@
       </div>
 
       <div class="social-icons">
-        <a href="#" class="social-icon"><i class="fab fa-instagram fa-sm"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter fa-sm"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f fa-sm"></i></a>
-      </div>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/spotify/" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-sm"></i>
+        </a>
+      
+        <!-- Twitter -->
+        <a href="https://twitter.com/spotify" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter fa-sm"></i>
+        </a>
+      
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/Spotify" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f fa-sm"></i>
+        </a></div>
 
     </div>
 
