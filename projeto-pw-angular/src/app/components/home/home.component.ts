@@ -12,20 +12,22 @@ import { RouterModule } from '@angular/router';
 export class HomeComponent {
 
   audio = new Audio();
+  tocando: boolean = false;
 
   tocarMusica2(musicaUrl: string) {
     if (!this.audio.paused) {
       this.audio.pause();
       this.audio.currentTime = 0;
-    }
-    else {
+      this.tocando = false;
+    } else {
+      this.tocando = true;
       this.audio = new Audio(musicaUrl);
       this.audio.loop = true;
       this.audio.play().catch(error => {
         console.error('Erro ao reproduzir a música:', error);
       });
-    }
-  }
+    };
+  };
 
   tocarMusica() {
     this.audio.play();
@@ -36,7 +38,7 @@ export class HomeComponent {
   }
 
   musicasData = [
-    { name: 'ClickBait', image: 'assets/musicas-dosPredios.jpg', musica: 'assets/audio/VEIGH - Clickbait ft. Niink (Clipe Oficial).mp3'},
+    { name: 'ClickBait', image: 'assets/musicas-dosPredios.jpg', musica: 'assets/audio/VEIGH - Clickbait ft. Niink (Clipe Oficial).mp3' },
     { name: 'Não temos Medo', image: 'assets/musicas-naoTemosMedo.jpeg', musica: '' },
     { name: 'Mãe Solteira', image: 'assets/musicas-maeSolteira.jpg', musica: 'assets/audio/MÃE SOLTEIRA - J.Eskine, MC Davi, MC G15, DG e Batidão Stronda (GR6 Explode).mp3' },
     { name: 'Deixa eu ver se ta Lisinha', image: 'assets/musicas-deixaEuVer.jpeg', musica: '' },
@@ -55,7 +57,7 @@ export class HomeComponent {
 
   albumsData = [
     { name: 'White Noise (sleep & Relaxation Sounds)', artist: 'Sleepy John', image: 'assets/album-white-noise.jpg', musica: '' },
-    { name: 'O Céu Explica Tudo(Ao Vivo)', artist: 'Henrique & juliano', image: 'assets/audio/Henrique e Juliano - O CÉU EXPLICA TUDO - DVD O Céu Explica Tudo.mp3' },
+    { name: 'O Céu Explica Tudo(Ao Vivo)', artist: 'Henrique & juliano', image: 'assets/audio/Henrique e Juliano - O CÉU EXPLICA TUDO - DVD O Céu Explica Tudo.mp3', musica: '' },
     { name: 'Nada como um dia após o outro', artist: 'Racionais', image: 'assets/album-vida-loka.jpg', musica: 'assets/audio/Eu sou 157 - Nada Como Um Dia Após O Outro Dia (Chora Agora).mp3' },
     { name: 'HIT ME HARD AND SOFT', artist: 'Billie Eilish', image: 'assets/album-hit-me.jpg', musica: 'assets/audio/Billie Eilish - SKINNY (Live Performance from Amazon Music Songline).mp3' },
     { name: 'CAJU', artist: 'Liniker', image: 'assets/album-caju.jpg', musica: 'assets/audio/Liniker - Caju (Letra).mp3' },

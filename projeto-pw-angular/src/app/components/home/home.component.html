@@ -65,11 +65,16 @@
           <div class="container-nome-button">
             <h3 class="musicas-nome">{{item.name}}</h3>
             <p>Música</p>
-            <button class="play-button" (click)="tocarMusica2(item.musica)"></button>
+            <button class="play-button" (click)="tocarMusica2(item.musica)"><span class="material-symbols-outlined">
+                play_pause
+              </span></button>
           </div>
         </div>
         }
       </div>
+
+      <audio
+        src="../../../../public/assets/audio/Henrique e Juliano - O CÉU EXPLICA TUDO - DVD O Céu Explica Tudo.mp3"></audio>
 
       <h2>Artistas Populares</h2>
       <div class="artists-grid">
@@ -79,7 +84,9 @@
           <div class="container-nome-button">
             <h3>{{item.name}}</h3>
             <p>Artista</p>
-            <button class="play-button"></button>
+            <button class="play-button" (click)="tocarMusica2(item.musica)"><span class="material-symbols-outlined">
+                play_pause
+              </span></button>
           </div>
         </div>
         }
@@ -93,7 +100,9 @@
           <div class="container-nome-button">
             <h3>{{item.name}}</h3>
             <p>{{item.artist}}</p>
-            <button class="play-button"></button>
+            <button class="play-button" (click)="tocarMusica2(item.musica)"><span class="material-symbols-outlined">
+                play_pause
+              </span></button>
           </div>
         </div>
         }
@@ -153,7 +162,7 @@
     </div>
 
     <div class="divider"></div>
-    
+
 
   </main>
 </div>
