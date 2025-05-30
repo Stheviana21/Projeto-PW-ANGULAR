@@ -3,7 +3,7 @@
   <div class="header-left">
     <div class="spotify-logo">
       <img class="spotify-logo-img" src="assets/spotify-icon.jpg" alt="">
-      <i class="fa-brands fa-spotify"></i>
+      <!-- <i class="fa-brands fa-spotify"></i> -->
     </div>
     <div class="search-bar">
       <input type="text" placeholder="O que você quer ouvir?" />
@@ -99,14 +99,71 @@
         }
       </div>
     </section>
+
+    <!-- rodape -->
+
+    <div class="divider"></div>
+
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <div class="section-title">Empresa</div>
+        <a href="#" class="footer-link">Sobre</a>
+        <a href="#" class="footer-link">Empregos</a>
+        <a href="#" class="footer-link">For the Record</a>
+      </div>
+
+      <div class="footer-section">
+        <div class="section-title">Comunidades</div>
+        <a href="#" class="footer-link">Para Artistas</a>
+        <a href="#" class="footer-link">Desenvolvedores</a>
+        <a href="#" class="footer-link">Publicidade</a>
+        <a href="#" class="footer-link">Investidores</a>
+        <a href="#" class="footer-link">Fornecedores</a>
+      </div>
+
+      <div class="footer-section">
+        <div class="section-title">Links úteis</div>
+        <a href="#" class="footer-link">Suporte</a>
+        <a href="#" class="footer-link">Aplicativo móvel grátis</a>
+      </div>
+
+      <div class="footer-section">
+        <div class="section-title">Planos do Spotify</div>
+        <a href="#" class="footer-link">Premium Individual</a>
+        <a href="#" class="footer-link">Premium Duo</a>
+        <a href="#" class="footer-link">Premium Família</a>
+        <a href="#" class="footer-link">Premium Universitário</a>
+        <a href="#" class="footer-link">Spotify Free</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram fa-sm"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter fa-sm"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f fa-sm"></i></a>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="copyright-container">
+      <div class="copyright">© 2025 Spotify AB</div>
+      <div class="country">Brasil</div>
+    </div>
+
+    <div class="divider"></div>
+    
+
   </main>
 </div>
 
+<!-- banner chamada para novos clientes  -->
 <div class="banner">
   <div>
     <h2>Testar o Premium de graça</h2>
     <p>Inscreva-se para curtir músicas ilimitadas só com alguns anúncios. Não precisa de um cartão de crédito.
     </p>
   </div>
-  <button>Inscreva-se Grátis</button>
+  <a routerLinkActive="router-link-active" [routerLink]="['/login']" class="bnt-banner">Inscreva-se Grátis</a>
 </div>

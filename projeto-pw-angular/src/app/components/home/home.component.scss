@@ -99,7 +99,7 @@
   padding: 24px;
   flex-grow: 1;
   margin-top: 0;
-  overflow-y: auto;
+  // overflow-y: auto;
 }
 
 
@@ -213,21 +213,15 @@
   font-size: 14px;
 }
 
-/* Remova o search-bar do main */
-main {
-  padding: 24px;
-  flex-grow: 1;
-  overflow-y: auto;
-  margin-top: 0;
-  /* Remove margem superior */
-}
-
 
 main {
   padding: 24px;
   flex-grow: 1;
   overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
 
 .search-bar {
   display: flex;
@@ -337,6 +331,7 @@ main {
   margin-bottom: 10px;
 }
 
+//banner 
 .banner {
   position: fixed;
   bottom: 0;
@@ -354,17 +349,19 @@ main {
 }
 
 .banner p {
-  font-size: 10px;
+  font-size: 16px;
 }
 
-.banner button {
+.bnt-banner {
   border-radius: 20px;
-  color: #000;
+  background-color: #fff;
   border: none;
   padding: 12px 20px;
   font-weight: 600;
   cursor: pointer;
+  color: #000;
 }
+
 
 // Botão Play
 
@@ -396,4 +393,92 @@ $transicao: all 0.3s ease;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   margin-left: 4px;
+}
+
+// ropapé 
+
+.divider {
+  height: 1px;
+  background-color: #333;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  background-color: #222326;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+}
+
+.social-icon:hover {
+  color: #1DB954;
+  transform: scale(1.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: #919496;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: #1DB954;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0;
+}
+
+.copyright {
+  color: #919496;
+  font-size: 12px;
+}
+
+.country {
+  color: #919496;
+  font-size: 12px;
+  text-align: right;
 }
