@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { User } from '../../../interfaces/user';
 import { UserService } from '../../../services/user.service';
 
@@ -17,7 +17,7 @@ export class RegisterComponent {
 
   userService = inject(UserService);
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.registerForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -39,6 +39,7 @@ export class RegisterComponent {
       this.userService.postUser(novoUser).subscribe({
         next: (response) => {
           console.log(`Usuário cirado ${response}`);
+          this.router.navigate(['login']);
         },
         error(e) {
           console.error(`Erro ao criar novo usuário ${e}`);
