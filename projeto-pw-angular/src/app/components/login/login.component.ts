@@ -56,12 +56,12 @@ export class LoginComponent implements OnInit {
           console.log(`email do currentUser: ${this.userService.currentUser.email}`);
 
           this.loginForm.markAllAsTouched();
-        }
+        };
       }
     )
-  }
+  };
 
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
-  }
-}
+  };
+};
